@@ -9,6 +9,17 @@
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+  <dialog class="welcome" id="welcome" aria-labelledby="welcome-title" aria-describedby="welcome-hint">
+    <p class="eyebrow">Una invitación para ti</p>
+    <h2 id="welcome-title">Gabriel <span>&amp;</span> Jessyka</h2>
+    <button class="envelope" id="openInvitation" type="button" aria-label="Abrir la invitación" autofocus>
+      <span class="envelope-letter" aria-hidden="true">Nos casamos<span>6 · noviembre · 2026</span></span>
+      <span class="envelope-pocket" aria-hidden="true"></span>
+      <span class="envelope-flap" aria-hidden="true"></span>
+      <span class="envelope-seal" aria-hidden="true">G &amp; J</span>
+    </button>
+    <p id="welcome-hint">Toca el sello para abrir</p>
+  </dialog>
   <main class="invitation">
     <section class="hero" aria-labelledby="names">
       <aside class="margin-note note-top">Hay amores<br>que hacen<br>la vida más bonita<span class="ornament" aria-hidden="true">♡</span></aside>
@@ -49,6 +60,7 @@
           <a class="button map-button" href="https://maps.app.goo.gl/zEfEGYrLRxQ4pYvF7" target="_blank" rel="noopener noreferrer" aria-label="Ver ubicación de Hogar González en Google Maps">Ver ubicación <span aria-hidden="true">→</span></a>
         </article>
       </div>
+      <a class="button calendar-button" href="boda-gabriel-jessyka.ics" download="Boda-Gabriel-y-Jessyka.ics">Agregar al calendario <span aria-hidden="true">＋</span></a>
       <p class="presence">Tu presencia hace<br>nuestra historia aún más especial</p>
       <div class="heart" aria-hidden="true">♡</div>
     </section>
@@ -166,6 +178,32 @@
         musicBtn.disabled = false;
       }
     });
+    const welcome = document.getElementById("welcome");
+    const openInvitation = document.getElementById("openInvitation");
+    let openingInvitation = false;
+    function revealInvitation() {
+      if (openingInvitation) return;
+      openingInvitation = true;
+      welcome.classList.add("opening");
+      const finishOpening = () => {
+        welcome.close();
+        document.body.classList.remove("invitation-closed");
+        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+        const heading = document.getElementById("names");
+        heading.tabIndex = -1;
+        heading.focus({ preventScroll: true });
+      };
+      window.setTimeout(finishOpening, motionPreference.matches ? 0 : 1100);
+    }
+    openInvitation.addEventListener("click", revealInvitation);
+    welcome.addEventListener("cancel", event => {
+      event.preventDefault();
+      revealInvitation();
+    });
+    if (typeof welcome.showModal === "function") {
+      welcome.showModal();
+      document.body.classList.add("invitation-closed");
+    }
   </script>
 </body>
 </html>
