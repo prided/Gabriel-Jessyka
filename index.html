@@ -145,15 +145,15 @@ function tone(freq,start,dur,vol){
 function phrase(){
   if(!playing)return;
   const t=audioCtx.currentTime+.05;
-  [[261.63,0],[329.63,2],[392,4],[329.63,6],[293.66,8],[349.23,10],[392,12],[349.23,14]].forEach(([f,o])=>tone(f,t+o,2.6,.045));
+  [[261.63,0],[329.63,2],[392,4],[329.63,6],[293.66,8],[349.23,10],[392,12],[349.23,14]].forEach(([f,o])=>tone(f,t+o,2.6,.12));
   timer=setTimeout(phrase,16000);
 }
 document.getElementById("musicBtn").addEventListener("click",async()=>{
-  if(!audioCtx){audioCtx=new (window.AudioContext||window.webkitAudioContext)();gain=audioCtx.createGain();gain.gain.value=.35;gain.connect(audioCtx.destination)}
+  if(!audioCtx){audioCtx=new (window.AudioContext||window.webkitAudioContext)();gain=audioCtx.createGain();gain.gain.value=.8;gain.connect(audioCtx.destination)}
   if(audioCtx.state==="suspended")await audioCtx.resume();
   playing=!playing;
   document.getElementById("musicBtn").textContent=playing?"❚❚ Pausar música":"♫ Música tranquila";
-  if(playing)phrase(); else {clearTimeout(timer);gain.gain.cancelScheduledValues(audioCtx.currentTime);gain.gain.setValueAtTime(0,audioCtx.currentTime)}
+  if(playing){gain.gain.cancelScheduledValues(audioCtx.currentTime);gain.gain.setValueAtTime(.8,audioCtx.currentTime);phrase();} else {clearTimeout(timer);gain.gain.cancelScheduledValues(audioCtx.currentTime);gain.gain.setValueAtTime(0,audioCtx.currentTime)}
 });
 </script>
 </body></html>
