@@ -55,7 +55,7 @@ filter:blur(.2px)}
 .reveal.show{opacity:1;transform:none}
 .music{position:fixed;right:18px;bottom:18px;z-index:20;border:0;border-radius:999px;padding:12px 16px;background:#fffdf8dd;box-shadow:0 8px 24px #0002;color:#3f513c;font:600 14px Arial,sans-serif;backdrop-filter:blur(8px)}
 .music:hover{cursor:pointer}
-
+</style>
 </head>
 <body><div class="floral"></div><button class="music" id="musicBtn">♫ Música tranquila</button>
 <main class="page">
@@ -134,5 +134,5 @@ document.getElementById("musicBtn").addEventListener("click",async()=>{
   document.getElementById("musicBtn").textContent=playing?"❚❚ Pausar música":"♫ Música tranquila";
   if(playing)phrase(); else {clearTimeout(timer);gain.gain.cancelScheduledValues(audioCtx.currentTime);gain.gain.setValueAtTime(0,audioCtx.currentTime)}
 });
-
+</script>
 </body></html>
