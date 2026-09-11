@@ -28,6 +28,12 @@ linear-gradient(180deg,#fffdf8,#f7f2e9)}
 .divider{width:86px;height:1px;background:var(--gold);margin:0 auto 34px}
 .details{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:760px;margin:auto}
 .detail{padding:26px 18px;border:1px solid #cdb992;border-radius:18px;background:#fffdfa}
+.location-card{position:relative;cursor:pointer;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.location-card:hover,.location-card:focus-visible{transform:translateY(-4px);box-shadow:0 12px 28px #0002;border-color:#b28b4f}
+.location-card .map-preview{position:absolute;left:50%;bottom:calc(100% + 12px);transform:translateX(-50%) translateY(8px);width:min(340px,85vw);padding:12px 14px;border-radius:14px;background:#3f513c;color:#fff;font:14px/1.45 Arial,sans-serif;box-shadow:0 12px 30px #0003;opacity:0;visibility:hidden;transition:.2s;z-index:30;pointer-events:none}
+.location-card:hover .map-preview,.location-card:focus-visible .map-preview{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+.location-card .map-preview:after{content:"";position:absolute;top:100%;left:50%;margin-left:-8px;border:8px solid transparent;border-top-color:#3f513c}
+.location-card .click-hint{display:block;margin-top:10px;font:11px Arial,sans-serif;letter-spacing:.08em;color:#7d8d76}
 .icon{font-size:28px;margin-bottom:12px}.label{font:12px Arial,sans-serif;letter-spacing:.2em;color:#7d786e}
 .value{font-size:21px;line-height:1.5;margin-top:10px}
 .quote{font-size:29px;line-height:1.5;font-style:italic;max-width:670px;margin:0 auto;color:#4e5a4a}
@@ -73,7 +79,9 @@ filter:blur(.2px)}
   <div class="details">
     <div class="detail"><div class="icon">♡</div><div class="label">FECHA</div><div class="value">Viernes<br>6 de noviembre de 2026</div></div>
     <div class="detail"><div class="icon">◷</div><div class="label">HORA</div><div class="value">6:00 p. m.</div></div>
-    <div class="detail"><div class="icon">⌖</div><div class="label">LUGAR</div><div class="value">Hogar González<br>Jalisco 540 entre Ramírez y Altamirano</div></div>
+    <div class="detail location-card" role="link" tabindex="0" aria-label="Abrir ubicación de Hogar González en Google Maps" onclick="window.open('https://maps.app.goo.gl/zEfEGYrLRxQ4pYvF7','_blank')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.open('https://maps.app.goo.gl/zEfEGYrLRxQ4pYvF7','_blank')}">
+<div class="map-preview">📍 <strong>Hogar González</strong><br>Jalisco 540 entre Ramírez y Altamirano<br><small>Haz clic para abrir la ubicación en Google Maps</small></div>
+<div class="icon">⌖</div><div class="label">LUGAR</div><div class="value">Hogar González<br>Jalisco 540 entre Ramírez y Altamirano<span class="click-hint">VER UBICACIÓN ↗</span></div></div>
   </div>
 </section>
 
