@@ -204,7 +204,13 @@
       };
       window.setTimeout(finishOpening, motionPreference.matches ? 0 : 1100);
     }
-    openInvitation.addEventListener("click", revealInvitation);
+    openInvitation.addEventListener("click", () => {
+      if (weddingMusic.paused) {
+        if (weddingMusic.error) weddingMusic.load();
+        weddingMusic.play().catch(showMusicError);
+      }
+      revealInvitation();
+    });
     welcome.addEventListener("cancel", event => {
       event.preventDefault();
       revealInvitation();
