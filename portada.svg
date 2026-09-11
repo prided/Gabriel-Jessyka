@@ -1,29 +1,87 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1000" width="1200" height="1000">
 <defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7efe4"/><stop offset="1" stop-color="#efe2cf"/></linearGradient>
-  <radialGradient id="glow" cx="80%" cy="15%" r="70%"><stop stop-color="#fff9ed" stop-opacity=".95"/><stop offset="1" stop-color="#fff9ed" stop-opacity="0"/></radialGradient>
+  <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#fbf7ef"/><stop offset=".55" stop-color="#f5ecdd"/><stop offset="1" stop-color="#efe3d1"/>
+  </linearGradient>
+  <radialGradient id="wash1" cx=".15" cy=".2" r=".45"><stop stop-color="#b9c8b2" stop-opacity=".32"/><stop offset="1" stop-color="#b9c8b2" stop-opacity="0"/></radialGradient>
+  <radialGradient id="wash2" cx=".9" cy=".75" r=".5"><stop stop-color="#d9bf8f" stop-opacity=".22"/><stop offset="1" stop-color="#d9bf8f" stop-opacity="0"/></radialGradient>
+  <filter id="soft"><feGaussianBlur stdDeviation="4"/></filter>
 </defs>
-<rect width="1200" height="630" fill="url(#bg)"/>
-<rect width="1200" height="630" fill="url(#glow)"/>
-<g fill="none" stroke="#b68b43" stroke-width="3">
-  <rect x="35" y="35" width="1130" height="560" rx="24"/>
-  <rect x="49" y="49" width="1102" height="532" rx="20" opacity=".45"/>
+<rect width="1200" height="1000" fill="url(#paper)"/>
+<rect width="1200" height="1000" fill="url(#wash1)"/>
+<rect width="1200" height="1000" fill="url(#wash2)"/>
+
+<!-- thin gold curves -->
+<path d="M-20 760 C110 840 120 955 205 1025" fill="none" stroke="#b68b43" stroke-width="3"/>
+<path d="M945 -40 C860 115 900 205 1040 300 C1140 367 1165 470 1220 520" fill="none" stroke="#b68b43" stroke-width="3"/>
+
+<!-- upper-left botanical spray -->
+<g transform="translate(-30,-25) rotate(-5 180 180)">
+  <path d="M80 35 C130 160 160 300 215 450" fill="none" stroke="#8b744d" stroke-width="3"/>
+  <g fill="#73866c" opacity=".95">
+    <ellipse cx="95" cy="80" rx="34" ry="78" transform="rotate(-40 95 80)"/>
+    <ellipse cx="145" cy="115" rx="32" ry="74" transform="rotate(-58 145 115)"/>
+    <ellipse cx="110" cy="180" rx="30" ry="70" transform="rotate(-25 110 180)"/>
+    <ellipse cx="175" cy="205" rx="31" ry="76" transform="rotate(-63 175 205)"/>
+    <ellipse cx="145" cy="285" rx="29" ry="68" transform="rotate(-28 145 285)"/>
+    <ellipse cx="210" cy="325" rx="29" ry="70" transform="rotate(-64 210 325)"/>
+  </g>
+  <g fill="#fffdf6" stroke="#dfcfb2" stroke-width="2">
+    <circle cx="170" cy="72" r="28"/><circle cx="196" cy="86" r="24"/><circle cx="181" cy="105" r="24"/>
+    <circle cx="115" cy="235" r="21"/><circle cx="136" cy="246" r="19"/><circle cx="122" cy="262" r="18"/>
+    <circle cx="220" cy="155" r="18"/><circle cx="238" cy="164" r="16"/>
+  </g>
+  <g fill="#f9f6ec">
+    <circle cx="250" cy="210" r="8"/><circle cx="272" cy="225" r="7"/><circle cx="285" cy="245" r="6"/><circle cx="255" cy="255" r="6"/>
+  </g>
 </g>
-<g fill="#52624d" opacity=".95">
-  <ellipse cx="120" cy="95" rx="24" ry="58" transform="rotate(-38 120 95)"/>
-  <ellipse cx="173" cy="123" rx="19" ry="50" transform="rotate(-58 173 123)"/>
-  <ellipse cx="1025" cy="520" rx="24" ry="58" transform="rotate(140 1025 520)"/>
-  <ellipse cx="1080" cy="490" rx="19" ry="50" transform="rotate(120 1080 490)"/>
+
+<!-- right-side leaves -->
+<g transform="translate(970,220)">
+  <path d="M30 20 C-10 175 -5 360 -80 535" fill="none" stroke="#8b744d" stroke-width="3"/>
+  <g fill="#788a72" opacity=".9">
+    <ellipse cx="8" cy="72" rx="30" ry="76" transform="rotate(38 8 72)"/>
+    <ellipse cx="-28" cy="148" rx="29" ry="70" transform="rotate(53 -28 148)"/>
+    <ellipse cx="4" cy="230" rx="30" ry="76" transform="rotate(34 4 230)"/>
+    <ellipse cx="-45" cy="310" rx="28" ry="72" transform="rotate(55 -45 310)"/>
+    <ellipse cx="-18" cy="395" rx="27" ry="67" transform="rotate(30 -18 395)"/>
+  </g>
 </g>
-<g fill="#fbfaf4" stroke="#c8aa76" stroke-width="2">
-  <circle cx="98" cy="145" r="22"/><circle cx="128" cy="157" r="18"/><circle cx="1053" cy="455" r="22"/><circle cx="1082" cy="442" r="18"/>
+
+<!-- lower-left watercolor foliage -->
+<g opacity=".72">
+  <ellipse cx="120" cy="845" rx="150" ry="92" fill="#a7b79f"/>
+  <ellipse cx="245" cy="910" rx="170" ry="85" fill="#c5cfbe"/>
 </g>
-<text x="600" y="130" text-anchor="middle" fill="#7f6d52" font-family="Georgia,serif" font-size="24" letter-spacing="8">NUESTRA BODA</text>
-<text x="600" y="250" text-anchor="middle" fill="#2f3b2e" font-family="Georgia,serif" font-size="76" font-style="italic">Gabriel &amp; Jessyka</text>
-<text x="600" y="307" text-anchor="middle" fill="#7f6d52" font-family="Georgia,serif" font-size="25">6 de noviembre de 2026 · 6:00 p. m.</text>
-<line x1="315" y1="348" x2="885" y2="348" stroke="#b68b43" stroke-width="2"/>
-<text x="600" y="400" text-anchor="middle" fill="#4b4a45" font-family="Georgia,serif" font-size="30">Hogar González</text>
-<text x="600" y="442" text-anchor="middle" fill="#6b665f" font-family="Georgia,serif" font-size="22">Jalisco 540 entre Ramírez y Altamirano</text>
-<text x="600" y="505" text-anchor="middle" fill="#7f6d52" font-family="Georgia,serif" font-size="24" font-style="italic">“Juntos, hoy comenzamos para siempre”</text>
-<text x="600" y="558" text-anchor="middle" fill="#b68b43" font-family="Georgia,serif" font-size="28">♡</text>
+<g transform="translate(0,765)">
+  <path d="M15 190 C115 100 210 85 320 20" fill="none" stroke="#8b744d" stroke-width="3"/>
+  <g fill="#657c61">
+    <ellipse cx="70" cy="160" rx="26" ry="60" transform="rotate(55 70 160)"/>
+    <ellipse cx="135" cy="125" rx="25" ry="58" transform="rotate(62 135 125)"/>
+    <ellipse cx="205" cy="88" rx="23" ry="56" transform="rotate(68 205 88)"/>
+  </g>
+  <g fill="#fffdf6" stroke="#dfcfb2" stroke-width="2">
+    <circle cx="110" cy="185" r="18"/><circle cx="128" cy="174" r="16"/><circle cx="150" cy="165" r="14"/>
+  </g>
+</g>
+
+<!-- typography -->
+<text x="600" y="190" text-anchor="middle" fill="#4f5e4c" font-family="Arial, sans-serif" font-size="24" letter-spacing="10">NOS CASAMOS</text>
+<line x1="470" y1="235" x2="550" y2="235" stroke="#b68b43" stroke-width="2"/>
+<text x="600" y="243" text-anchor="middle" fill="#b68b43" font-family="Georgia,serif" font-size="38">♡</text>
+<line x1="650" y1="235" x2="730" y2="235" stroke="#b68b43" stroke-width="2"/>
+
+<text x="600" y="385" text-anchor="middle" fill="#314330" font-family="Georgia,serif" font-size="105" font-style="italic">Gabriel</text>
+<text x="600" y="470" text-anchor="middle" fill="#b68b43" font-family="Georgia,serif" font-size="72">&amp;</text>
+<text x="600" y="575" text-anchor="middle" fill="#314330" font-family="Georgia,serif" font-size="105" font-style="italic">Jessyka</text>
+
+<text x="600" y="665" text-anchor="middle" fill="#45443f" font-family="Georgia,serif" font-size="25">Queremos compartir contigo uno de los días más importantes</text>
+<text x="600" y="700" text-anchor="middle" fill="#45443f" font-family="Georgia,serif" font-size="25">de nuestra historia.</text>
+
+<line x1="560" y1="755" x2="640" y2="755" stroke="#b68b43" stroke-width="2"/>
+<text x="600" y="815" text-anchor="middle" fill="#4c5449" font-family="Arial,sans-serif" font-size="22" letter-spacing="9">6 · NOVIEMBRE · 2026</text>
+
+<text x="985" y="95" text-anchor="middle" fill="#4c5449" font-family="Georgia,serif" font-size="18" letter-spacing="5">HAY AMORES</text>
+<text x="985" y="125" text-anchor="middle" fill="#4c5449" font-family="Georgia,serif" font-size="18" letter-spacing="5">QUE HACEN</text>
+<text x="985" y="155" text-anchor="middle" fill="#4c5449" font-family="Georgia,serif" font-size="18" letter-spacing="5">LA VIDA MÁS BONITA</text>
 </svg>
