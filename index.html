@@ -1,184 +1,171 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f4efe6">
-<title>Gabriel & Jessyka | Nuestra boda</title>
-<meta name="description" content="Invitación a la boda de Gabriel y Jessyka — 6 de noviembre de 2026 a las 6:00 p. m.">
-<style>
-:root{--cream:#f7f2e9;--paper:#fffdf8;--sage:#52624d;--sage2:#7d8d76;--gold:#b28b4f;--ink:#33352f}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:
-radial-gradient(circle at 8% 12%,#bcc9b588 0 8%,transparent 18%),
-radial-gradient(circle at 92% 18%,#d9c49688 0 9%,transparent 19%),
-radial-gradient(circle at 10% 78%,#aebda688 0 10%,transparent 22%),
-radial-gradient(circle at 90% 88%,#d8bd8b77 0 11%,transparent 24%),
-linear-gradient(180deg,#e8dfcf,#f4ecdf 36%,#e9dfcf 100%);color:var(--ink);font-family:Georgia,"Times New Roman",serif}
-.page{max-width:860px;margin:auto;background:#fffaf2e8;box-shadow:0 18px 50px #493d2e35;overflow:hidden;backdrop-filter:blur(2px)}
-.hero{min-height:760px;display:grid;place-items:center;text-align:center;padding:70px 24px;position:relative;background:
-radial-gradient(circle at 10% 15%,#dce5d8 0 3%,transparent 4%),
-radial-gradient(circle at 90% 18%,#e8dfca 0 3%,transparent 4%),
-radial-gradient(circle at 18% 78%,#c8d4c055 0 16%,transparent 30%),
-radial-gradient(circle at 82% 32%,#e4cfaa66 0 14%,transparent 28%),
-linear-gradient(180deg,#fffaf1,#f2e6d5)}
-.hero:before,.hero:after{content:"";position:absolute;width:260px;height:260px;border:1px solid #b28b4f66;border-radius:50%;filter:blur(.1px)}
-.hero:before{left:-125px;top:-80px}.hero:after{right:-110px;bottom:-100px}
-.eyebrow{letter-spacing:.38em;font:13px Arial,sans-serif;color:var(--sage2)}
-.names{font-size:clamp(54px,10vw,92px);font-weight:400;font-style:italic;line-height:.95;color:#344432;margin:24px 0}
-.amp{display:block;font-size:.7em;color:var(--gold)}
-.hero p{font-size:20px;line-height:1.7;margin:0 auto;max-width:560px}
-.scroll{margin-top:48px;font:12px Arial,sans-serif;letter-spacing:.18em;color:#7a756d}
-.section{padding:76px 28px;text-align:center}
-.section.alt{background:
-radial-gradient(circle at 8% 25%,#b8c8b055 0 15%,transparent 28%),
-radial-gradient(circle at 92% 75%,#dec79c55 0 16%,transparent 30%),
-linear-gradient(135deg,#eef1e8,#f6ede1)}
-.title{font-size:34px;font-weight:400;margin:0 0 28px;color:#394737}
-.divider{width:86px;height:1px;background:var(--gold);margin:0 auto 34px}
-.details{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:760px;margin:auto}
-.detail{padding:26px 18px;border:1px solid #c8a96d;border-radius:18px;background:linear-gradient(180deg,#fffdf8,#f7efe4);box-shadow:0 8px 20px #6d5a3b14}
-.location-card{position:relative;cursor:pointer;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
-.location-card:hover,.location-card:focus-visible{transform:translateY(-4px);box-shadow:0 12px 28px #0002;border-color:#b28b4f}
-.location-card .map-preview{position:absolute;left:50%;bottom:calc(100% + 12px);transform:translateX(-50%) translateY(8px);width:min(340px,85vw);padding:12px 14px;border-radius:14px;background:#3f513c;color:#fff;font:14px/1.45 Arial,sans-serif;box-shadow:0 12px 30px #0003;opacity:0;visibility:hidden;transition:.2s;z-index:30;pointer-events:none}
-.location-card:hover .map-preview,.location-card:focus-visible .map-preview{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
-.location-card .map-preview:after{content:"";position:absolute;top:100%;left:50%;margin-left:-8px;border:8px solid transparent;border-top-color:#3f513c}
-.location-card .click-hint{display:block;margin-top:10px;font:11px Arial,sans-serif;letter-spacing:.08em;color:#7d8d76}
-.icon{font-size:28px;margin-bottom:12px}.label{font:12px Arial,sans-serif;letter-spacing:.2em;color:#7d786e}
-.value{font-size:21px;line-height:1.5;margin-top:10px}
-.quote{font-size:29px;line-height:1.5;font-style:italic;max-width:670px;margin:0 auto;color:#4e5a4a}
-.countdown{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:30px}
-.unit{min-width:100px;padding:22px 12px;border-radius:18px;background:#fffdf8;border:1px solid #cdb992}
-.num{font-size:34px;color:#41513d}.unit span:last-child{display:block;font:11px Arial,sans-serif;letter-spacing:.15em;color:#7c776e;margin-top:8px}
-.rsvp{background:
-radial-gradient(circle at 10% 20%,#7a8f7055 0 16%,transparent 32%),
-radial-gradient(circle at 90% 80%,#b8995e44 0 18%,transparent 34%),
-linear-gradient(135deg,#354833,#506046);color:#fff;padding:82px 28px}
-.rsvp .title{color:#fff}.rsvp p{font-size:18px;line-height:1.6;max-width:560px;margin:0 auto 28px}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:58px;padding:0 28px;border-radius:999px;background:#25D366;color:#fff;text-decoration:none;font:700 16px Arial,sans-serif;box-shadow:0 12px 26px #0002;transition:.2s}
-.btn:hover{transform:translateY(-2px)}
-.map{margin-top:18px;display:inline-block;color:#e9e6dc;text-decoration:none;border-bottom:1px solid #e9e6dc66;padding-bottom:3px}
-.footer{padding:42px 24px;text-align:center;background:linear-gradient(180deg,#fffaf2,#eee3d2);color:#6f675d;font-style:italic;border-top:1px solid #c9aa7038}
-@media(max-width:700px){.hero{min-height:660px}.details{grid-template-columns:1fr}.section{padding:58px 18px}.quote{font-size:24px}}
-
-.floral{position:fixed;inset:0;pointer-events:none;z-index:5;overflow:hidden}
-.botanical{position:absolute;width:310px;height:390px;opacity:.78;filter:drop-shadow(0 8px 14px #4c47351a)}
-.botanical:before{content:"";position:absolute;inset:0;background:
-radial-gradient(circle at 24% 19%,#fffdf7 0 6%,#eadfca 6.5% 8%,transparent 8.5%),
-radial-gradient(circle at 34% 24%,#fffdf7 0 7%,#eadfca 7.5% 9%,transparent 9.5%),
-radial-gradient(circle at 19% 31%,#fffaf0 0 5%,#e5d5b8 5.5% 7%,transparent 7.5%),
-radial-gradient(circle at 43% 39%,#fffdf7 0 5%,#eadfca 5.5% 7%,transparent 7.5%),
-radial-gradient(circle at 27% 53%,#fffaf0 0 4%,#e5d5b8 4.5% 6%,transparent 6.5%),
-radial-gradient(circle at 48% 63%,#fffdf7 0 4%,#eadfca 4.5% 6%,transparent 6.5%),
-radial-gradient(ellipse at 42% 12%,#60745a 0 7%,transparent 7.6%),
-radial-gradient(ellipse at 53% 22%,#80917a 0 8%,transparent 8.6%),
-radial-gradient(ellipse at 58% 35%,#6e8268 0 9%,transparent 9.6%),
-radial-gradient(ellipse at 39% 46%,#94a18a 0 8%,transparent 8.6%),
-radial-gradient(ellipse at 60% 55%,#71836b 0 9%,transparent 9.6%),
-radial-gradient(ellipse at 43% 70%,#899a82 0 8%,transparent 8.6%),
-radial-gradient(circle at 61% 73%,#fff 0 1.5%,transparent 2%),
-radial-gradient(circle at 68% 67%,#fff 0 1.4%,transparent 1.9%),
-radial-gradient(circle at 72% 76%,#fff 0 1.3%,transparent 1.8%),
-radial-gradient(circle at 58% 82%,#fff 0 1.5%,transparent 2%)}
-.botanical:after{content:"";position:absolute;left:45%;top:7%;width:2px;height:78%;background:linear-gradient(#b58b49,transparent);transform:rotate(-26deg);transform-origin:top}
-.botanical.tl{left:-70px;top:-45px;transform:rotate(-10deg)}
-.botanical.tr{right:-95px;top:210px;transform:scaleX(-1) rotate(-5deg);opacity:.52}
-.botanical.bl{left:-105px;bottom:90px;transform:rotate(174deg);opacity:.52}
-.botanical.br{right:-65px;bottom:-45px;transform:rotate(170deg)}
-.hero .corner-flower{position:absolute;width:230px;height:260px;opacity:.42;background:
-radial-gradient(circle at 24% 22%,#fffdf7 0 7%,#e9ddc6 7.5% 9%,transparent 9.5%),
-radial-gradient(circle at 38% 34%,#fffaf0 0 6%,#e5d5b8 6.5% 8%,transparent 8.5%),
-radial-gradient(ellipse at 50% 18%,#64785e 0 10%,transparent 10.7%),
-radial-gradient(ellipse at 57% 39%,#82927a 0 11%,transparent 11.7%),
-radial-gradient(ellipse at 42% 59%,#71856a 0 10%,transparent 10.7%),
-radial-gradient(circle at 66% 58%,#fff 0 2%,transparent 2.5%),
-radial-gradient(circle at 72% 65%,#fff 0 1.8%,transparent 2.3%)}
-.hero .corner-flower.one{left:-28px;top:-18px;transform:rotate(-10deg)}
-.hero .corner-flower.two{right:-38px;bottom:-18px;top:auto;transform:rotate(168deg)}
-.reveal{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
-.reveal.show{opacity:1;transform:none}
-.music{position:fixed;right:18px;bottom:18px;z-index:20;border:0;border-radius:999px;padding:12px 16px;background:#fffdf8dd;box-shadow:0 8px 24px #0002;color:#3f513c;font:600 14px Arial,sans-serif;backdrop-filter:blur(8px)}
-.music:hover{cursor:pointer}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f2e8">
+  <meta name="description" content="Invitación a la boda de Gabriel y Jessyka — 6 de noviembre de 2026 a las 6:00 p. m.">
+  <title>Gabriel &amp; Jessyka | Nuestra boda</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
-<body><button class="music" id="musicBtn">♫ Música tranquila</button>
-<main class="page">
-<section class="hero">
-  <div>
-    <div class="eyebrow">NOS CASAMOS</div>
-    <h1 class="names">Gabriel <span class="amp">&amp;</span> Jessyka</h1>
-    <p>Queremos compartir contigo uno de los días más importantes de nuestra historia.</p>
-    <div class="scroll">6 · NOVIEMBRE · 2026</div>
-  </div>
-</section>
+<body>
+  <main class="invitation">
+    <section class="hero" aria-labelledby="names">
+      <aside class="margin-note note-top">Hay amores<br>que hacen<br>la vida más bonita<span class="ornament" aria-hidden="true">♡</span></aside>
+      <aside class="margin-note note-left">Gracias<br>por ser parte<br>de este<br>capítulo<span aria-hidden="true">♡</span></aside>
+      <aside class="margin-note note-right">Un gran día<br>grandes personas<br>mismos sueños<span aria-hidden="true">♡</span></aside>
+      <div class="hero-content">
+        <p class="eyebrow">Nos casamos</p>
+        <div class="ornament" aria-hidden="true">♡</div>
+        <h1 id="names">Gabriel <span>&amp;</span> Jessyka</h1>
+        <p class="intro">Queremos compartir contigo uno de los días más importantes de nuestra historia.</p>
+        <div class="short-rule" aria-hidden="true"></div>
+        <p class="date">6 · noviembre · 2026</p>
+        <p class="hero-motto">Mismas personas,<br>más historias</p>
+        <a class="scroll-cue" href="#nuestra-boda" aria-label="Ver los detalles de nuestra boda">♡</a>
+      </div>
+    </section>
 
-<section class="section reveal">
-  <h2 class="title">Nuestra boda</h2><div class="divider"></div>
-  <div class="details">
-    <div class="detail"><div class="icon">♡</div><div class="label">FECHA</div><div class="value">Viernes<br>6 de noviembre de 2026</div></div>
-    <div class="detail"><div class="icon">◷</div><div class="label">HORA</div><div class="value">6:00 p. m.</div></div>
-    <div class="detail location-card" role="link" tabindex="0" aria-label="Abrir ubicación de Hogar González en Google Maps" onclick="window.open('https://maps.app.goo.gl/zEfEGYrLRxQ4pYvF7','_blank')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.open('https://maps.app.goo.gl/zEfEGYrLRxQ4pYvF7','_blank')}">
-<div class="map-preview">📍 <strong>Hogar González</strong><br>Jalisco 540 entre Ramírez y Altamirano<br><small>Haz clic para abrir la ubicación en Google Maps</small></div>
-<div class="icon">⌖</div><div class="label">LUGAR</div><div class="value">Hogar González<br>Jalisco 540 entre Ramírez y Altamirano<span class="click-hint">VER UBICACIÓN ↗</span></div></div>
-  </div>
-</section>
+    <section class="details-section section" id="nuestra-boda" aria-labelledby="details-title">
+      <h2 id="details-title">Nuestra boda</h2>
+      <div class="ornament" aria-hidden="true">♡</div>
+      <div class="details">
+        <article class="detail">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 27 5.5 16.3C-2 8.4 9 1.5 16 10c7-8.5 18-1.6 10.5 6.3Z"/></svg></div>
+          <h3>Fecha</h3>
+          <p>Viernes<br><time datetime="2026-11-06">6 de noviembre de<br>2026</time></p>
+          <div class="short-rule" aria-hidden="true"></div>
+        </article>
+        <article class="detail">
+          <div class="icon icon-gold" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="16" cy="16" r="12"/><path d="M16 6v11h9"/></svg></div>
+          <h3>Hora</h3>
+          <p><time datetime="2026-11-06T18:00:00-07:00">6:00 p. m.</time></p>
+          <div class="short-rule" aria-hidden="true"></div>
+        </article>
+        <article class="detail location">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M26 13c0 7-10 16-10 16S6 20 6 13a10 10 0 1 1 20 0Z"/><circle cx="16" cy="13" r="3.5"/></svg></div>
+          <h3>Lugar</h3>
+          <p>Hogar González<br>Jalisco 540 entre<br>Ramírez y Altamirano</p>
+          <a class="button map-button" href="https://maps.app.goo.gl/zEfEGYrLRxQ4pYvF7" target="_blank" rel="noopener noreferrer" aria-label="Ver ubicación de Hogar González en Google Maps">Ver ubicación <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+      <p class="presence">Tu presencia hace<br>nuestra historia aún más especial</p>
+      <div class="heart" aria-hidden="true">♡</div>
+    </section>
 
-<section class="section alt reveal">
-  <p class="quote">“Juntos, hoy comenzamos para siempre.”</p>
-</section>
+    <section class="countdown-section section" aria-labelledby="countdown-title">
+      <p class="eyebrow">Cada día más cerca</p>
+      <h2 id="countdown-title">Falta muy poco</h2>
+      <div class="ornament" aria-hidden="true">♡</div>
+      <div class="countdown" role="timer" aria-label="Tiempo restante para la boda">
+        <div class="unit"><span class="num" id="days">—</span><span class="unit-label">Días</span></div>
+        <span class="countdown-colon" aria-hidden="true">:</span>
+        <div class="unit"><span class="num" id="hours">—</span><span class="unit-label">Horas</span></div>
+        <span class="countdown-colon" aria-hidden="true">:</span>
+        <div class="unit"><span class="num" id="mins">—</span><span class="unit-label">Minutos</span></div>
+        <span class="countdown-colon" aria-hidden="true">:</span>
+        <div class="unit"><span class="num" id="secs">—</span><span class="unit-label">Segundos</span></div>
+      </div>
+      <p class="quote">“Juntos, hoy comenzamos para siempre.”</p>
+    </section>
 
-<section class="section reveal">
-  <h2 class="title">Falta muy poco</h2><div class="divider"></div>
-  <div class="countdown">
-    <div class="unit"><div class="num" id="days">—</div><span>DÍAS</span></div>
-    <div class="unit"><div class="num" id="hours">—</div><span>HORAS</span></div>
-    <div class="unit"><div class="num" id="mins">—</div><span>MINUTOS</span></div>
-    <div class="unit"><div class="num" id="secs">—</div><span>SEGUNDOS</span></div>
-  </div>
-</section>
+    <section class="rsvp-section section" aria-labelledby="rsvp-title">
+      <div class="rsvp-card">
+        <p class="eyebrow">Celebremos juntos</p>
+        <h2 id="rsvp-title">Confirma tu asistencia</h2>
+        <div class="ornament" aria-hidden="true">♡</div>
+        <p class="rsvp-copy">Solo necesitas tocar el botón, escribir tu nombre<br class="desktop-break"> y enviar el mensaje por WhatsApp.</p>
+        <a class="button rsvp-button" href="https://wa.me/526121694860?text=Hola%2C%20confirmo%20mi%20asistencia%20a%20la%20boda%20de%20Gabriel%20y%20Jessyka.%20Mi%20nombre%20es%3A%20" target="_blank" rel="noopener noreferrer">Confirmar por WhatsApp <span aria-hidden="true">↗</span></a>
+        <p class="rsvp-signoff">Nos encantará compartir este día contigo.</p>
+      </div>
+    </section>
+    <footer><p class="footer-names">Gabriel <span>&amp;</span> Jessyka</p><p>Gracias por ser parte de este capítulo</p><span class="heart" aria-hidden="true">♡</span></footer>
+  </main>
+  <audio id="weddingMusic" src="musica-boda.mp3" preload="none" loop></audio>
+  <button class="music" id="musicBtn" type="button" aria-pressed="false"><span aria-hidden="true">♫</span> <span id="musicLabel">Música tranquila</span></button>
+  <script>
+    const target = new Date("2026-11-06T18:00:00-07:00").getTime();
+    function tick() {
+      const seconds = Math.floor(Math.max(0, target - Date.now()) / 1000);
+      document.getElementById("days").textContent = Math.floor(seconds / 86400);
+      document.getElementById("hours").textContent = String(Math.floor(seconds % 86400 / 3600)).padStart(2, "0");
+      document.getElementById("mins").textContent = String(Math.floor(seconds % 3600 / 60)).padStart(2, "0");
+      document.getElementById("secs").textContent = String(seconds % 60).padStart(2, "0");
+    }
+    tick();
+    setInterval(tick, 1000);
 
-<section class="rsvp reveal">
-  <h2 class="title">Confirma tu asistencia</h2>
-  <p>Solo necesitas tocar el botón, escribir tu nombre y enviar el mensaje por WhatsApp.</p>
-  <a class="btn" href="https://wa.me/526121694860?text=Hola%2C%20confirmo%20mi%20asistencia%20a%20la%20boda%20de%20Gabriel%20y%20Jessyka.%20Mi%20nombre%20es%3A%20">Confirmar por WhatsApp</a>
-  <br>
-  <a class="map" href="https://maps.app.goo.gl/zEfEGYrLRxQ4pYvF7" target="_blank" rel="noopener">Ver ubicación en Google Maps</a>
-</section>
+    // Mejora progresiva: todo el contenido permanece visible sin animaciones o JavaScript.
+    const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
+    if ("IntersectionObserver" in window && "animate" in Element.prototype) {
+      const activeEntrances = new Set();
+      const entranceObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entranceObserver.unobserve(entry.target);
+          if (motionPreference.matches || entry.target.contains(document.activeElement)) return;
+          const entrance = entry.target.animate([
+            { opacity: 0, transform: "translateY(24px)" },
+            { opacity: 1, transform: "translateY(0)" }
+          ], {
+            duration: 900,
+            delay: Number(entry.target.dataset.entranceDelay || 0),
+            easing: "cubic-bezier(.22,1,.36,1)",
+            fill: "backwards"
+          });
+          activeEntrances.add(entrance);
+          const finish = () => {
+            activeEntrances.delete(entrance);
+            entry.target.removeEventListener("focusin", revealFocusedContent);
+          };
+          const revealFocusedContent = () => entrance.cancel();
+          entry.target.addEventListener("focusin", revealFocusedContent);
+          entrance.onfinish = finish;
+          entrance.oncancel = finish;
+        });
+      }, { threshold: .08 });
+      document.querySelectorAll(".section>h2,.section>.eyebrow,.section>.ornament,.detail,.presence,.section>.heart,.countdown,.quote,.rsvp-card,footer").forEach(element => {
+        if (element.matches(".detail")) {
+          element.dataset.entranceDelay = String([...element.parentElement.children].indexOf(element) * 120);
+        }
+        entranceObserver.observe(element);
+      });
+      motionPreference.addEventListener("change", () => {
+        if (motionPreference.matches) activeEntrances.forEach(entrance => entrance.cancel());
+      });
+    }
 
-<footer class="footer reveal">Gracias por ser parte de este capítulo · Gabriel &amp; Jessyka</footer>
-</main>
-<script>
-const target=new Date("2026-11-06T18:00:00-07:00").getTime();
-function tick(){const d=Math.max(0,target-Date.now());const s=Math.floor(d/1000);
-document.getElementById("days").textContent=Math.floor(s/86400);
-document.getElementById("hours").textContent=Math.floor((s%86400)/3600);
-document.getElementById("mins").textContent=Math.floor((s%3600)/60);
-document.getElementById("secs").textContent=s%60}
-tick();setInterval(tick,1000);
-
-const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")}),{threshold:.12});
-document.querySelectorAll(".reveal").forEach(el=>obs.observe(el));
-
-let audioCtx=null, gain=null, timer=null, playing=false;
-function tone(freq,start,dur,vol){
-  const o=audioCtx.createOscillator(),g=audioCtx.createGain();
-  o.type="sine";o.frequency.value=freq;g.gain.setValueAtTime(0,start);
-  g.gain.linearRampToValueAtTime(vol,start+.6);
-  g.gain.linearRampToValueAtTime(0,start+dur);
-  o.connect(g).connect(gain);o.start(start);o.stop(start+dur+.1);
-}
-function phrase(){
-  if(!playing)return;
-  const t=audioCtx.currentTime+.05;
-  [[261.63,0],[329.63,2],[392,4],[329.63,6],[293.66,8],[349.23,10],[392,12],[349.23,14]].forEach(([f,o])=>tone(f,t+o,2.6,.12));
-  timer=setTimeout(phrase,16000);
-}
-document.getElementById("musicBtn").addEventListener("click",async()=>{
-  if(!audioCtx){audioCtx=new (window.AudioContext||window.webkitAudioContext)();gain=audioCtx.createGain();gain.gain.value=.8;gain.connect(audioCtx.destination)}
-  if(audioCtx.state==="suspended")await audioCtx.resume();
-  playing=!playing;
-  document.getElementById("musicBtn").textContent=playing?"❚❚ Pausar música":"♫ Música tranquila";
-  if(playing){gain.gain.cancelScheduledValues(audioCtx.currentTime);gain.gain.setValueAtTime(.8,audioCtx.currentTime);phrase();} else {clearTimeout(timer);gain.gain.cancelScheduledValues(audioCtx.currentTime);gain.gain.setValueAtTime(0,audioCtx.currentTime)}
-});
-</script>
-</body></html>
+    const weddingMusic = document.getElementById("weddingMusic");
+    weddingMusic.volume = .25;
+    const musicBtn = document.getElementById("musicBtn");
+    const musicLabel = document.getElementById("musicLabel");
+    function syncMusicButton() {
+      const playing = !weddingMusic.paused;
+      musicBtn.setAttribute("aria-pressed", String(playing));
+      musicLabel.textContent = playing ? "Pausar música" : "Música tranquila";
+    }
+    function showMusicError() {
+      musicBtn.setAttribute("aria-pressed", "false");
+      musicLabel.textContent = "Reintentar música";
+    }
+    weddingMusic.addEventListener("play", syncMusicButton);
+    weddingMusic.addEventListener("pause", syncMusicButton);
+    weddingMusic.addEventListener("error", showMusicError);
+    musicBtn.addEventListener("click", async () => {
+      musicBtn.disabled = true;
+      try {
+        if (weddingMusic.paused) {
+          if (weddingMusic.error) weddingMusic.load();
+          await weddingMusic.play();
+        } else {
+          weddingMusic.pause();
+        }
+      } catch (error) {
+        showMusicError();
+      } finally {
+        musicBtn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
