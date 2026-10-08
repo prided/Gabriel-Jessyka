@@ -5,10 +5,10 @@ CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:boda-gabriel-jessyka-20261106@invitacion.local
 DTSTAMP:20260911T000000Z
-DTSTART:20261107T010000Z
+DTSTART:20261107T000000Z
 SUMMARY:Boda de Gabriel y Jessyka
 LOCATION:Hogar González\, Jalisco 540 entre Ramírez y Altamirano
-DESCRIPTION:6 de noviembre de 2026 a las 6:00 p. m. (UTC-07:00).\n
+DESCRIPTION:06 de noviembre de 2026 a las 17:00 (UTC-07:00).\n
  Ubicación: https://maps.app.goo.gl/zEfEGYrLRxQ4pYvF7
 URL:https://maps.app.goo.gl/zEfEGYrLRxQ4pYvF7
 END:VEVENT
