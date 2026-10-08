@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f7f2e8">
-  <meta name="description" content="Invitación a la boda de Gabriel y Jessyka — 06 de noviembre de 2026 a las 18:00.">
+  <meta name="description" content="Invitación a la boda de Gabriel y Jessyka — 06 de noviembre de 2026 a las 17:00.">
   <title>Gabriel &amp; Jessyka | Nuestra boda</title>
   <meta property="og:title" content="Boda Gabriel &amp; Jessyka">
-  <meta property="og:description" content="06 de noviembre de 2026 · 18:00 · Hogar González">
+  <meta property="og:description" content="06 de noviembre de 2026 · 17:00 · Hogar González">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://prided.github.io/Gabriel-Jessyka/">
   <meta property="og:image" content="https://prided.github.io/Gabriel-Jessyka/banner-boda.png">
@@ -17,7 +17,7 @@
   <meta property="og:image:alt" content="Invitación de boda de Gabriel y Jessyka">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Boda Gabriel &amp; Jessyka">
-  <meta name="twitter:description" content="06 de noviembre de 2026 · 18:00 · Hogar González">
+  <meta name="twitter:description" content="06 de noviembre de 2026 · 17:00 · Hogar González">
   <meta name="twitter:image" content="https://prided.github.io/Gabriel-Jessyka/banner-boda.png">
   <link rel="stylesheet" href="estilos.css">
 </head>
@@ -63,7 +63,7 @@
         <article class="detail">
           <div class="icon icon-gold" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="16" cy="16" r="12"/><path d="M16 6v11h9"/></svg></div>
           <h3>Hora</h3>
-          <p><time datetime="2026-11-06T18:00:00-07:00">18:00</time></p>
+          <p><time datetime="2026-11-06T17:00:00-07:00">17:00</time></p>
           <div class="short-rule" aria-hidden="true"></div>
           <h3>Vestimenta</h3>
           <p>Semi-formal</p>
@@ -116,7 +116,7 @@
   <audio id="weddingMusic" src="musica-boda.mp3" preload="none" loop></audio>
   <button class="music" id="musicBtn" type="button" aria-pressed="false"><span aria-hidden="true">♫</span> <span id="musicLabel">Música tranquila</span></button>
   <script>
-    const target = new Date("2026-11-06T18:00:00-07:00").getTime();
+    const target = new Date("2026-11-06T17:00:00-07:00").getTime();
     function tick() {
       const seconds = Math.floor(Math.max(0, target - Date.now()) / 1000);
       document.getElementById("days").textContent = Math.floor(seconds / 86400);
@@ -127,7 +127,6 @@
     tick();
     setInterval(tick, 1000);
 
-    // Mejora progresiva: todo el contenido permanece visible sin animaciones o JavaScript.
     const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
     if ("IntersectionObserver" in window && "animate" in Element.prototype) {
       const activeEntrances = new Set();
